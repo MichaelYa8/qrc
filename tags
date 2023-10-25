@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Makefile	/^BIN=$(PROG).bin$/;"	m
+CC	Makefile	/^CC=arm-cortex_a9-linux-gnueabi-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -nostdlib$/;"	m
+CMD_MAX_LEN	main.c	6;"	d	file:
+GPIOC_ALTFN0	led.c	5;"	d	file:
+GPIOC_OUT	led.c	3;"	d	file:
+GPIOC_OUTENB	led.c	4;"	d	file:
+GPIOD_ALTFN0	iic.c	2;"	d	file:
+GPIOD_ALTFN0	uart.c	5;"	d	file:
+GPIOD_ALTFN1	uart.c	6;"	d	file:
+GPIOD_PULLENB	uart.c	7;"	d	file:
+I2CADD	iic.c	7;"	d	file:
+I2CCLKENB2	iic.c	3;"	d	file:
+I2CCON	iic.c	5;"	d	file:
+I2CDS	iic.c	8;"	d	file:
+I2CLC	iic.c	9;"	d	file:
+I2CSTAT	iic.c	6;"	d	file:
+IPRESET0	iic.c	4;"	d	file:
+LD	Makefile	/^LD=arm-cortex_a9-linux-gnueabi-ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=-nostartfiles -nostdlib -T shell.lds -e main$/;"	m
+MMA8653_ID	mma8653.c	4;"	d	file:
+MMA8653_RANGE_2G	mma8653.c	6;"	d	file:
+MMA8653_RANGE_4G	mma8653.c	7;"	d	file:
+MMA8653_RANGE_8G	mma8653.c	8;"	d	file:
+OBJCOPY	Makefile	/^OBJCOPY=arm-cortex_a9-linux-gnueabi-objcopy$/;"	m
+OBJS	Makefile	/^OBJS=main.o  uart.o led.o cmd.o  iic.o mma8653.o itoa.o$/;"	m
+PROG	Makefile	/^PROG=shell$/;"	m
+UART0CLKENB	uart.c	2;"	d	file:
+UART0CLKGEN0L	uart.c	3;"	d	file:
+UBRDIV0	uart.c	14;"	d	file:
+UCON0	uart.c	10;"	d	file:
+UFRACVAL0	uart.c	15;"	d	file:
+ULCON0	uart.c	9;"	d	file:
+URXH0	uart.c	13;"	d	file:
+UTRSTAT0	uart.c	11;"	d	file:
+UTXH0	uart.c	12;"	d	file:
+__CMD_H__	cmd.h	4;"	d
+__I2C_H__	iic.h	3;"	d
+__ITOA_H__	itoa.h	2;"	d
+__LED_H__	led.h	3;"	d
+__MMA8653_H__	mma8653.h	4;"	d
+__UART_H__	uart.h	4;"	d
+_tcmd	cmd.h	/^typedef struct _tcmd$/;"	s
+cmd	main.c	/^char cmd[CMD_MAX_LEN];$/;"	v
+cmd_func	cmd.h	/^    void (*cmd_func)(void);$/;"	m	struct:_tcmd
+cmd_list	cmd.c	/^cmd_t cmd_list[]=$/;"	v
+cmd_name	cmd.h	/^    char *cmd_name;$/;"	m	struct:_tcmd
+cmd_t	cmd.h	/^}cmd_t;$/;"	t	typeref:struct:_tcmd
+find_cmd	cmd.c	/^cmd_t *find_cmd(char *input_cmd)$/;"	f
+id	mma8653.c	/^unsigned char id[32];$/;"	v
+iic2_init	iic.c	/^void iic2_init(void)$/;"	f
+iic2_rx	iic.c	/^void iic2_rx(unsigned char *byte, unsigned char len)$/;"	f
+iic2_start	iic.c	/^void iic2_start(unsigned char addr, unsigned int rdwr)$/;"	f
+iic2_stop	iic.c	/^void iic2_stop(void)$/;"	f
+iic2_tx	iic.c	/^void iic2_tx(unsigned char *byte, unsigned char len)$/;"	f
+itoa	itoa.c	/^void itoa(char *buffer, unsigned int num)$/;"	f
+led1_off	led.c	/^void led1_off(void)$/;"	f
+led1_on	led.c	/^void led1_on(void)$/;"	f
+led_init	led.c	/^void led_init(void)$/;"	f
+main	main.c	/^int main()$/;"	f
+mma8653_active	mma8653.c	/^void mma8653_active(void)$/;"	f
+mma8653_get_xyz	mma8653.c	/^void mma8653_get_xyz(void)$/;"	f
+mma8653_read	mma8653.c	/^void mma8653_read(unsigned char addr, unsigned char *byte, int len)$/;"	f
+mma8653_show_id	mma8653.c	/^void mma8653_show_id(void)$/;"	f
+mma8653_write	mma8653.c	/^void mma8653_write(unsigned char addr, unsigned char *byte, int len)$/;"	f
+my_strcmp	cmd.c	/^int my_strcmp(char *str1, char *str2)$/;"	f
+uart_getc	uart.c	/^char uart_getc(void)$/;"	f
+uart_gets	uart.c	/^void uart_gets(char *buf, int len)$/;"	f
+uart_init	uart.c	/^void uart_init(void)$/;"	f
+uart_putc	uart.c	/^void uart_putc(char c)$/;"	f
+uart_puts	uart.c	/^void uart_puts(char *str)$/;"	f
